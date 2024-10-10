@@ -99,3 +99,38 @@ main .formularios .form{
 .google img:hover{
     transform: scale(1.2);
 }
+
+dialog{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border: none;
+    width: 350px;
+    height: 150px;
+    font-family: "Roboto", system-ui;
+    overflow: hidden;
+}
+
+.top{
+    padding: 7px;
+    background-color: black;
+    color: white;
+}
+
+.bottom{
+    padding: 20px;
+    border: 1px solid;
+    height: 100%;
+}
+
+#aviso{
+    color: black;
+}
+
+#close{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+}
