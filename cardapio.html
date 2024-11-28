@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="cardapio.css">
+    <script src="cardapio.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img id="logo" src="imagens/logo.jpg" alt="Logo">
+            <p>Pizzaria Militar</p>
+        </div>
+        <div class="menu">
+            <a id="link" href="main.html">Home</a>
+            <a id="link" href="#">Cardápio</a>
+            <a id="link" href="metas.html">Metas</a>
+            <a id="link" href="https://maps.app.goo.gl/uupS7zXHUnWCJedS8" target="_blank">Nossa localização</a>
+            <a id="link" href="https://web.whatsapp.com/" target="_blank">Contato</a>
+            <img id="carrinho" src="imagens/carrinho-de-compras.png" alt="Carrinho">
+            <img onclick="btnSair()" id="perfil" src="imagens/perfil.jpeg" alt="Imagem de perfil">
+    </header>
+    <main>
+        <div class="grid">
+            <div class="row">
+                <div class="card">
+                    <div class="foto">
+                        <img src="imagens/transferir.jpg" alt="">
+                    </div>
+                    <div class="pizname">
+                        <h2>Parma e brie</h2>
+                        <p>Molho de tomate, mozzarella, presunto tipo parma...</p>
+                        <p onclick="parmaebrie()" class="car" id="car1">Adicionar ao carrinho</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="foto">
+                        <img src="imagens/pizza-de-cogumelos.webp" alt="">
+                    </div>
+                    <div class="pizname">
+                        <h2>Cogumelo Paris</h2>
+                        <p>Molho de tomate, mozzarela, cogumelo paris fresco puxado em azeite 0,2%...</p>
+                        <p onclick="cogumeloparis()" class="car" id="car2">Adicionar ao carrinho</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="foto">
+                        <img src="imagens/blumenau.jpeg" alt="">
+                    </div>
+                    <div class="pizname">
+                        <h2>Blumenau</h2>
+                        <p>Molho de tomate, mozzarela, linguiça artesanal blumenau, gorgonzola e orégano</p>
+                        <p onclick="blumenau()" class="car" id="car3">Adicionar ao carrinho</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="foto">
+                        <img src="imagens/muzzarella-e-alho.jpeg" alt="">
+                    </div>
+                    <div class="pizname">
+                        <h2>Mozzarella e Alho</h2>
+                        <p>Molho de tomate, mozzarella, alho desidratado frito e orégano</p>
+                        <p onclick="mozzarellaealho()" class="car" id="car4">Adicionar ao carrinho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="foto">
+                        <img src="imagens/muzzarella.jpeg" alt="">
+                    </div>
+                    <div class="pizname">
+                        <h2>Mozzarella</h2>
+                        <p>Molho de tomate, mozzarella, orégano e azeitonas</p>
+                        <p onclick="mozzarella()" class="car" id="car5">Adicionar ao carrinho</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="foto">
+                        <img src="imagens/cesar.jpeg" alt="" style="height: 150px;">
+                    </div>
+                    <div class="pizname">
+                        <h2>Pesto Confit</h2>
+                        <p>Bastante Molho de tomate, fina camada de mozzarela. tomatinhos grape confitados...</p>
+                        <p onclick="pestoconfit()" class="car" id="car6">Adicionar ao carrinho</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="foto">
+                        <img src="imagens/abrobinha.jpeg" alt="">
+                    </div>
+                    <div class="pizname">
+                        <h2>Abobrinha Pesto e Brie</h2>
+                        <p>Molho de tomate, mozzarela, finas fatias de abobrinha, lascas de queijo brie...</p>
+                        <p onclick="abobrinhapestoebrie()" class="car" id="car7">Adicionar ao carrinho</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="foto">
+                        <img src="imagens/burrata.jpeg" alt="">
+                    </div>
+                    <div class="pizname">
+                        <h2>Burrata e Parma</h2>
+                        <p>Molho de tomate, queijo cremoso burrata de búfala, presunto tipo parma e orégano</p>
+                        <p onclick="burrataeparma()" class="car" id="car8">Adicionar ao carrinho</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="foto">
+                        <img src="imagens/coca.jpeg" alt="">
+                    </div>
+                    <div class="pizname">
+                        <h2>Coca-cola</h2>
+                        
+                        <p onclick="cocacola()" class="car" id="car9">Adicionar ao carrinho</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="foto">
+                        <img src="imagens/guarana.jpeg" alt="">
+                    </div>
+                    <div class="pizname">
+                        <h2>Guaraná</h2>
+                       
+                        <p onclick="guarana()" class="car" id="car10">Adicionar ao carrinho</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="foto">
+                        <img src="imagens/fanta.jpeg" alt="">
+                    </div>
+                    <div class="pizname">
+                        <h2>Fanta uva</h2>
+                        
+                        <p onclick="fantauva()" class="car" id="car11">Adicionar ao carrinho</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="foto">
+                        <img src="imagens/sprite.jpeg" alt="">
+                    </div>
+                    <div class="pizname">
+                        <h2>Sprite</h2>
+                       
+                        <p onclick="sprite()" class="car" id="car12">Adicionar ao carrinho</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <dialog id="dial">
+        <form>
+            <input type="text" value="Parma e brie" id="nome" readonly>
+            <div class="pizza-img">
+                <img id="foto-pizza" src="imagens/transferir.jpg" alt="">
+            </div>
+            <div class="quantia">
+                <label for="quantia">Quantia</label>
+                <input type="number" value="1" name="quantia" id="quantia" max="5" min="1">
+            </div>
+            <input type="text" class="obs"  id="obs">
+            <p>Preço <span id="preco"></span></p>
+            <button id="calcular" type="button">Atualizar preço</button>
+            <button id="fim">Finalizar</button>
+        </form>
+    </dialog>
+</body>
+</html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -21,17 +23,22 @@ header{
 .logo{
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 60px;
 }
 
 .logo p{
     font-weight: bold;
+    font-family: "Archivo Black", serif;
 }
 
 #logo{
-    width: 70px;
+    width: 60px;
 }
 
+.menu{
+    display: flex;
+    align-items: center;
+}
 
 .menu a{
     display: inline-block;
@@ -49,7 +56,7 @@ header{
     margin-left: 10px;
     font-weight: bold;
     position: relative;
-    height: 20px;
+    height: 22px;
 }
 
 .menu #link::after{
@@ -67,7 +74,7 @@ header{
     width: 100%;
 }
 
-.menu #btn-lc{
+.menu .btn-lc{
     background-color: #F53333;
     color: yellow;
     padding: 3px 17px 3px 17px;
@@ -76,20 +83,42 @@ header{
     transition: 0.3s;
 }
 
-#btn-lc:hover{
+.btn-lc:hover{
     background-color: transparent;
     color: #F53333;
+}
+
+.menu img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.menu span{
+    border: 2px solid black;
+    background-color: #F53333;
+    color: yellow;
+    padding: 2px;
+    margin-left: 5px;
+    display: none;
+    cursor: pointer;
 }
 
 main{
     display: flex;
     padding: 0px 5% 0px 5%;
-    border: 1px solid black;
     min-height: calc(100vh - 70px - 50px);
+    position: relative;
 }
 
 main .txt{
     width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
 }
 
 main .txt h1{
@@ -104,7 +133,10 @@ main .txt p{
 
 main .img{
     width: 50%;
-    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translate(0%, -50%);
 }
 
 main .img img{
@@ -123,5 +155,5 @@ footer{
 }
 
 footer img{
-    width: 50px;
+    width: 40px;
 }

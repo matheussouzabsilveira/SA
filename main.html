@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria Militar</title>
     <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
 </head>
-<body>
+<body onload="carregar()">
     <header>
         <div class="logo">
             <img id="logo" src="imagens/logo.jpg" alt="Logo">
-            <p>Pizzaria Militar</p>
+            <p id="txt-logo">Pizzaria Militar</p>
         </div>
         <div class="menu">
-            <a id="link" href="#">Metas</a>
-            <a id="link" href="#">Nossa localização</a>
-            <a id="link" href="#">Contato</a>
-            <a id="link" href="#">Cardápio</a>
-            <a id="btn-lc" href="#">Login</a>
-            <a id="btn-lc" href="#">Cadastro</a>
+            <a id="link" href="main.html">Home</a>
+            <a id="link" href="cardapio.html">Cardápio</a>
+            <a id="link" href="metas.html">Metas</a>
+            <a id="link" href="https://maps.app.goo.gl/uupS7zXHUnWCJedS8" target="_blank">Nossa localização</a>
+            <a id="link" href="https://web.whatsapp.com/" target="_blank">Contato</a>
+            <a class="btn-lc" id="login" href="login.html">Login</a>
+            <a class="btn-lc" id="cadastro" href="cadastro.html">Cadastro</a>
+            <img onclick="btnSair()" id="perfil" src="imagens/perfil.jpeg" alt="Imagem de perfil">
+            <span onclick="sair()" id="sair">sair da conta</span>         
         </div>
     </header>
     <main>
